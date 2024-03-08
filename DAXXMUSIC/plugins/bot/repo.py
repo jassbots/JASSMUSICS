@@ -31,10 +31,3 @@ async def start(_, msg):
           InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/punjabiii_chat"),
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/unknown_bande"),
           ],
-----------------
-{list_of_users}"""
-        await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
-    else:
-        await app.send_message(message.chat.id, text="Failed to fetch contributors.")
-
-
