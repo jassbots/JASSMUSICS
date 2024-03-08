@@ -43,7 +43,7 @@ async def start(_, msg):
         photo="https://telegra.ph/file/d965f475f16d6fd8ec639.jpg",
         caption=start_txt,
         reply_markup=reply_markup
-    )
+    ) ]
  
    
 # --------------
