@@ -7,7 +7,7 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя **Yo Music** яєρσѕ ✪
+✪ ωεℓ¢σмє ƒσя ||yo musics|| яєρσѕ ✪
  
  ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
  
@@ -34,7 +34,7 @@ async def start(_, msg):
         [
           InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/punjabiii_chat"),
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/unknown_bande"),
-          ]
+          ],
 
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -43,7 +43,7 @@ async def start(_, msg):
         photo="https://telegra.ph/file/d965f475f16d6fd8ec639.jpg",
         caption=start_txt,
         reply_markup=reply_markup
-    ) ]
+    )
  
    
 # --------------
@@ -53,7 +53,7 @@ async def start(_, msg):
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/DAXXTEAM/DAXXMUSIC/contributors")
+        response = await client.get("t.me/punjabiii_chat")
     
     if response.status_code == 200:
         users = response.json()
@@ -70,5 +70,3 @@ async def repo(_, message):
         await app.send_message(message.chat.id, text=text, disable_web_page_preview=True)
     else:
         await app.send_message(message.chat.id, text="Failed to fetch contributors.")
-
-
