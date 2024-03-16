@@ -26,10 +26,6 @@ def generate_sticker(client, message):
 
 #---------
 
-
-
-
-
 @app.on_message(filters.command("packkang"))
 async def _packkang(app :app,message):  
     txt = await message.reply_text("**ᴘʀᴏᴄᴇssɪɴɢ....**")
