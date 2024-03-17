@@ -1,5 +1,5 @@
 import time, re
-from config import MusiicYo_bot
+from config import BOT_USERNAME 
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
