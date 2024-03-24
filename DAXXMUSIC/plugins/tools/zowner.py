@@ -5,17 +5,17 @@ import os
 import re
 import asyncio
 import time
-from VIPMUSIC import app
-from VIPMUSIC.utils.database import add_served_chat, delete_served_chat
+from DAXXMUSIC import app
+from DAXXMUSIC.utils.database import add_served_chat, delete_served_chat
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from VIPMUSIC.utils.database import get_assistant
+from DAXXMUSIC.utils.database import get_assistant
 import asyncio
-from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.mongo.afkdb import HEHE
-from VIPMUSIC.core.userbot import Userbot
+from DAXXMUSIC.misc import SUDOERS
+from DAXXMUSIC.mongo.afkdb import HEHE
+from DAXXMUSIC.core.userbot import Userbot
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
-from VIPMUSIC import app
+from DAXXMUSIC import app
 import asyncio
 import random
 from pyrogram import Client, filters
@@ -26,10 +26,10 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from VIPMUSIC import app
-from VIPMUSIC.utils.vip_ban import admin_filter
-from VIPMUSIC.utils.decorators.userbotjoin import UserbotWrapper
-from VIPMUSIC.utils.database import get_assistant, is_active_chat
+from DAXXMUSIC import app
+from DAXXMUSIC.utils.vip_ban import admin_filter
+from DAXXMUSIC.utils.decorators.userbotjoin import UserbotWrapper
+from DAXXMUSIC.utils.database import get_assistant, is_active_chat
 
 @app.on_message(
     filters.command("repo")
