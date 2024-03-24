@@ -2,11 +2,11 @@
 from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from ANNIEMUSIC import app
-from ANNIEMUSIC.core.call import JARVIS
-from ANNIEMUSIC.utils import bot_sys_stats
-from ANNIEMUSIC.utils.decorators.language import language
-from ANNIEMUSIC.utils.inline import supp_markup
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import JARVIS
+from DAXXMUSIC.utils import bot_sys_stats
+from DAXXMUSIC.utils.decorators.language import language
+from DAXXMUSIC.utils.inline import supp_markup
 from config import BANNED_USERS
 import aiohttp
 import asyncio
